@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 2</title>
+</head>
+<body>
+<h2>Bài 2</h2>
+
+<script>
+  function getANum() {
+    let num = parseInt(prompt("Enter a number!"));
+    while (isNaN(num) || num === "") {
+      num = prompt("Invalid. Try again!");
+    }
+    return num + 1;
+  }
+
+  alert(getANum() + "");
+</script>
+</body>
+</html>
